@@ -1,0 +1,641 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ html {
+     scroll-behavior: smooth;
+ }
+.clear {
+    clear: both;
+}
+
+/* MAIN */
+
+  /* I.HEADER */
+
+  #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #d59906e6;
+      height: 46px;
+      z-index: 1;
+      
+  }
+
+  /* a.Phan #nav */
+
+  #nav {
+    display: inline-block;
+}
+
+  #nav li {
+      position: relative;
+  }
+
+  #nav > li {
+      display: inline-block;
+  }
+
+  #nav li a {
+      padding: 0 28px;
+      line-height: 46px;
+      text-decoration: none;
+      display: block;
+  }
+
+  #nav > li > a {
+      font-weight: 550;
+      font-size: 16px;
+      color: #000000;
+  }
+
+  #nav > li:hover > a {
+      background-color: darkkhaki;
+      color: white;
+  }
+
+  .nav-arrow-down {
+      font-size: 12px;
+  }
+
+  /* b.Phan .subnav */
+
+  #nav li:hover .subnav {
+    display: block;
+ }
+
+  #nav, .subnav {
+      list-style-type: none;
+  }
+  #nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: khaki;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.521);
+  }
+
+  #nav .subnav  a {
+      color: white;
+  }
+
+  #nav .subnav li:hover {
+      background-color: darkkhaki;
+  }
+  
+  #header .search-btn {
+      float: right;
+      padding: 0 20px;
+      
+  }
+  #header .search-icon {
+      font-size: 20px;
+      line-height: 46px;
+  }
+
+  #header .search-btn:hover {
+      background-color: crimson;
+      cursor: pointer;
+  }
+
+  
+  /* II.SLIDER */
+
+  #slider {
+    margin-top: 46px; 
+    padding-top: 50%; /* 50% chiều ngang của chính nó */
+    background: url(../img-mono/slidermono.jpg) 
+    top center / cover no-repeat;
+    position: relative;
+    
+}
+
+#slider .text-content {
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+    width: 100%;
+    color: darkgoldenrod;
+
+}
+
+#slider .heading {
+    font-size: 32px;
+    
+    letter-spacing: 7px;
+}
+
+#slider .sub-heading {
+    font-size: 14px;
+    padding: 5px 0;
+    letter-spacing: 3px;
+}
+
+#slider .slogan-heading {
+    font-style: italic;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+#sub-slider {
+    background: url(../img-mono/mononame.png) top center / contain no-repeat;
+    padding-top: 30%;
+    background-size: 100%;
+    
+}
+#sub-slider:hover {
+    opacity: 0.7;
+}
+
+
+/* III.CONTENT */
+#content {
+    
+}
+
+
+/* 1.The Author */
+#the-author {
+    background-color: khaki;
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  /* a. Text about Nisio */
+#content .content-heading {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 7px;
+    color: darkgoldenrod;
+}
+#content .content-sub-heading {
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+}
+#content .content-desc {
+    
+    font-size: 16px;
+    
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+    font-style: italic;
+    font-weight: 700;
+}
+#content .content-about-author {
+    text-align: center;
+    padding-top: 20px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+   /* b.Img of nisio */
+#content .nisioisin {
+    text-align: center;
+}
+
+.nisioisin .img-nisioisin {
+    padding-top: 48px;
+}
+.nisioisin .img-nisioisin:hover {
+    opacity: 0.9;
+}
+
+.nisioisin .note-nisioisin {
+    padding-top: 10px;
+    font-size: 18px;
+    font-style: oblique;
+}
+
+
+/* 2. THE Illustrator */
+
+   /* a. text about vofan */
+
+   #the-illustrator .illus-heading {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 7px;
+    color: darkgoldenrod;
+   }
+   #the-illustrator .illus-sub-heading {
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+   }
+
+   #the-illustrator .illus-desc {
+    font-size: 16px;
+    
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+    font-style: italic;
+    font-weight: 700;
+   }
+
+   #the-illustrator .illus-about {
+    text-align: center;
+    padding-top: 20px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+   }
+
+   /* b. img of vofan */
+
+   #the-illustrator .img-vofan {
+    width: 100%;
+    padding-top: 40px;
+   }
+   #the-illustrator .img-vofan:hover {
+       opacity: 0.8;
+   }
+
+   #the-illustrator .note-vofan {
+    padding-top: 16px;
+    font-style: oblique;
+    text-align: center;
+   }
+
+   
+   /* 3.The added text */
+  #content #the-added-text {
+      background-color: darkkhaki;
+  }
+
+  .sub-content-section {
+    width: 800px;
+    padding: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #content .word-added-h {
+    
+  }
+  #content .word-added {
+  float: left;
+  width: 25%;
+  text-align: center;
+  }
+
+  .word-added {
+    font-size: 18px;
+    line-height: 1.6;
+    color: darkgoldenrod;
+  }
+
+/* 4.THE MONOGATARI */
+  
+  /* a. Mono-text */
+   #the-monogatari .mono-heading {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 7px;
+    color: darkgoldenrod;
+   }
+   #the-monogatari .mono-sub-heading {
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+   }
+
+   #the-monogatari .mono-desc {
+    font-size: 16px;
+    
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+    font-style: italic;
+    font-weight: 700;
+   }
+
+   #the-monogatari .mono-about {
+    text-align: justify;
+    padding-top: 20px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+   }
+
+   /* b.mono-img */
+
+   #the-monogatari .img-mono {
+       width: 100%;
+       padding-top: 40px;
+   }
+   #the-monogatari .img-mono:hover {
+       opacity: 0.8;
+   }
+
+   #the-monogatari .note-mono {
+       padding-top: 16px;
+       font-style: oblique;
+       text-align: center;
+   }
+
+
+   /* 5.BOOKCASE */
+
+   /* a.text */
+   #the-bookcase .bk-background {
+       background-color: khaki;
+       padding: 64px;
+   }
+
+   #the-bookcase .bk-heading {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 7px;
+    color: darkgoldenrod;
+   }
+   #the-bookcase .bk-sub-heading {
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+   }
+
+   #the-bookcase .bk-desc {
+    font-size: 16px;
+    
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+    font-style: italic;
+    font-weight: 700;
+   }
+
+
+   /* b.image */
+
+   #the-bookcase .sub-content-section2 {
+    width: 1400px;
+    padding: 64px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+ 
+   /* - Line 1 */
+   #the-bookcase .bk-img-row1 {
+    
+   }
+   
+    .row1 {
+    padding: 0 64px;
+    float: left;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+   }
+        /* + Image */
+   #the-bookcase .row1-book-img {
+    width: 100%;
+    display: block;
+    }
+    #the-bookcase .row1-book-img:hover {
+        opacity: 0.8;
+    }
+
+        /* + Text */
+   #the-bookcase .row1-book-about {
+       width: 100%;
+       background-color: tan;
+    }
+
+    #the-bookcase .row1-book-about {
+        
+        padding: 16px;
+        text-align: justify !important;
+    }
+
+    .row1 .row1-heading{
+        font-size: 16px;
+    }
+    .row1 .row1-sub-heading {
+      padding-top: 10px;
+      font-style: italic;
+      font-size: 14px;
+    }
+    .row1 .row1-desc {
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: 530;
+    }
+    .row1 .row1-btn {
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 10px;
+        color: black;
+        background-color: #f4f4bb;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 550;
+    }
+    .row1 .row1-btn:hover {
+        background-color: khaki;
+        color: white;
+    }
+
+
+    /* - Line 2 */
+    #the-bookcase .bk-img-row2 {
+        margin-top: 64px;
+    }
+
+
+
+    /* 6.CONTACT */
+
+    #contact {
+        background-color: darkkhaki;
+        
+    }
+    
+    #contact .contact-heading {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 7px;
+    color: darkgoldenrod;
+    }
+    #contact .contact-sub-heading {
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+    }
+    #contact .contact-desc {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+    font-style: italic;
+    font-weight: 700;
+    }
+
+    #contact .contact-mt {
+        margin-top: 48px;
+    }
+
+    /* - Icon */
+    #contact .contact-icon {
+        font-size: 16px;
+        font-weight: 530;
+        line-height: 1.6;
+        letter-spacing: 1.5px;
+        float: left;
+        width: 50%;
+    }
+
+    .contact-icon i[class*=ti-] {
+        width: 30px;
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    .contact-icon .ct-icon1 {
+        margin-top: 12px;
+    }
+    .contact-icon .ct-icon2 {
+       margin-top: 21px;
+    }
+    .contact-icon .ct-icon3 {
+        margin-top: 18px;
+    }
+    
+    
+
+
+    /* - Form */
+
+    #contact .contact-formline1 {
+        
+        float: left;
+        width: 50%;
+        
+    }
+    .contact-form1 {
+      margin-top: 10px;
+      
+    }
+    .contact-form2 {
+      margin-top: 10px;
+    }
+    .contact-form3 {
+        margin-top: 10px;
+    }
+    .contact-formline1 .form-control {
+        padding: 6px 4px 6px 8px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .form-btn {
+        margin-top: 16px;
+        float: right;
+        background-color: rgb(240, 230, 140);
+        color: darkgoldenrod;
+        font-size: 18px;
+        font-weight: 550;
+        padding: 8px 12px;
+        border: none;
+        text-align: center;
+    }
+    .form-btn:hover {
+        background-color: darkgoldenrod;
+        color: darkkhaki ;
+    }
+
+
+    /* 7. ADDED WORD 2 */
+    #added-word2 .aw2-heading {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 7px;
+    color: darkgoldenrod;
+   }
+   #added-word2 .aw2-sub-heading {
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    text-align: center;
+    color: darkgoldenrod;
+   }
+   #added-word2 .aw2-about {
+    text-align: center;
+    padding-top: 20px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    color: rgb(184, 134, 11);
+   }
+
+    /* 8.MAP */
+    #content .the-map {
+        width: 100%;
+    }
+
+
+/* IV.FOOTER */
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social-list a {
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: rgba(184, 134, 11, 0.9);
+    text-decoration: none;
+}
+
+.copyright a:hover,
+.social-list a:hover {
+    color: rgba(184, 134, 11, 0.6);
+}
+
+.copyright  {
+    margin-top: 16px;
+    margin-bottom: 22px;
+    font-size: 15px;
+    color: rgba(184, 134, 11, 0.9);
+}
+.copyright a {
+    font-size: 15px;
+    color: rgb(22, 19, 19);
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
